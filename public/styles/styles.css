@@ -2,8 +2,12 @@ body {
   background-color: powderblue;
 
 }
+/*
+.topbar-right {
+  text-align: right;
+}
 h1 {
-  color: black;
+  color: blue;
   font-family: verdana;
   font-size: 300%;
 
@@ -16,19 +20,19 @@ h4  {
 }
 
 input[type=text] {
-width: 50%;
+width: 100%;
 padding: 10px 10px;
 margin: 8px 0;
 box-sizing: border-box;
 }
 
 .cancelbtn, .signupbtn {
-  float: left;
+  float: right;
   width: 8%;
 }
 
 .container {   
-  width: 100%;   
+  width: 500%;   
  height: 100%;   
  font-family: "Helvetica Neue", Helvetica, sans-serif;   
  color: #444;   
