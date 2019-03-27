@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 var db = require("../models");
 
 module.exports = function(app) {
@@ -23,12 +25,12 @@ module.exports = function(app) {
 
   // Load user page
   app.get("/user", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.sendFile(path.join(__dirname, "../public/user.html"));
   });
 
   app.get("/userUpdate", function(req,res){
     res.sendFile(path.join(__dirname, "../public/userupdate.html"));
-  })
+  });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
