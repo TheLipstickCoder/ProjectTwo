@@ -10,6 +10,7 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
+<<<<<<< HEAD
 
 p {
   line-height: 2rem;
@@ -18,6 +19,36 @@ p {
 .sidenav-trigger {
   color: #26a69a;
 }
+=======
+.display-4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.images {
+  width: 400px;
+
+}
+.display-2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  h4  {
+    color: black;
+    font-family: courier;
+    font-size: 160%;
+    text-align:center;
+  }
+
+  input[type=text] {
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
 
 .parallax-container {
   min-height: 380px;
@@ -34,14 +65,52 @@ p {
     position: absolute;
     top: 40%;
   }
+<<<<<<< HEAD
   #index-banner .section {
     top: 10%;
+=======
+
+  #username {
+  width: 20%;
+  margin: 8px 0;
+  position: fixed;
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+=======
+  #password {
+    width: 20%;
+    margin: 8px 0;
+    position: fixed;
+    }
+    
+    .jumbotron{
+      background-color: whitesmoke;
+      
+    }
+
+
+
+    /*
+  .column1 {
+    width:100%;
+    margin: 30px 0;
+  }
+  .column2 {
+    width:180%;
+    margin: 50px 0;
+    
+  }
+  
+  .column3 {
+    width:80%;
+    margin: 50px 0;
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
   }
 }
 
