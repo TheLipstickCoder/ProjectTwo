@@ -27,9 +27,14 @@ module.exports = function(app) {
   app.get("/user", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/user.html"));
   });
-
+  // Fail Safe if DB and APIs don't work
   app.get("/userUpdate", function(req,res){
     res.sendFile(path.join(__dirname, "../public/userupdate.html"));
+  });
+
+  // Fail Safe if DB and APIs don't work
+  app.get("/userUpdate", function(req,res){
+    res.sendFile(path.join(__dirname, "../public/logoutConfirn.html"));
   });
 
   // Render 404 page for any unmatched routes
