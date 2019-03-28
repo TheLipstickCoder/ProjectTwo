@@ -1,54 +1,19 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable indent */
 var db = require("../models");
 
 module.exports = function(app) {
 
   // Get applicable goal
   app.get("/api/type/:goal", function(req, res) {
-    var goal = req.params.goal;
-    switch (goal) {
-      case "career": 
         db.PresetGoals.findAll({
           where: {
-            type: "career"
+            type: req.params.goal
           }.then(function(result){
-            return (res.json(result))
+            return (res.json(result));
           })
         });
-      case "healthfit":
-        db.PresetGoals.findAll({
-          where: {
-            type: "healthfit"
-          }.then(function(result){
-            return (res.json(result))
-          })
-        });
-      case "book":
-        db.PresetGoals.findAll({
-          where: {
-            type: "book"
-          }.then(function(result){
-            return (res.json(result))
-          })
-        });
-      case "business":
-        db.PresetGoals.findAll({
-          where: {
-            type: "business"
-          }.then(function(result){
-            return (res.json(result))
-          })
-        });
-      case "hobby":
-        db.PresetGoals.findAll({
-          where: {
-            type: "hobby"
-          }.then(function(result){
-            return (res.json(result))
-          })
-        });
-    }
-
-  });
+    });
 
   // Create a new example
   app.post("/api/examples", function(req, res) {
@@ -57,9 +22,15 @@ module.exports = function(app) {
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.PresetGoals.destroy({ where: { id: req.params.id } }).then(function(dbGoals) {
+  // Post a new example
+  app.put("/api/newStep", function(req, res) {
+    db.PresetGoals.update({
+      steps: req.body.steps
+    }, {
+      where: {
+        id: req.body.id
+      }
+    }).then(function(dbGoals) {
       res.json(dbGoals);
     });
   });

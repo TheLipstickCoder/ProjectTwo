@@ -1,14 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
-  var Sequelize = sequelize.define("goalsDB", {
-    steps: DataTypes.STRING,
-    achieved: DataTypes.BOOLEAN,
-    rating: {
-      type: DataTypes.INTEGER,
-      min: 1,
-      max: 5
-    },
-    createdAt: Sequelize.DATE,
-    updatedAt: Sequelize.DATE
+  var Goals = sequelize.define("goalsDB", {
+    stepID: DataTypes.STRING, //foreign key pointing to ID in presetGoals.
+    achieved: DataTypes.BOOLEAN //only thing Jacob needs to be aware of on the front end is this.
   });
-  return Sequelize;
+  return Goals;
 };

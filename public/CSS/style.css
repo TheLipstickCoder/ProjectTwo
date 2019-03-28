@@ -1,7 +1,25 @@
-body {
-    background-color: powderblue;
-  
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
+<<<<<<< HEAD
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+=======
 .display-4{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -30,46 +48,41 @@ h1 {
   margin: 8px 0;
   box-sizing: border-box;
   }
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
 
-  .cancelbtn, .signupbtn {
-    float: left;
-    width: 8%;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
   }
 
-  .container {   
-
-   width: 100% ;  
-   height: 100%; 
-   font-family: "Helvetica Neue", Helvetica, sans-serif;   
-   color: #444;   
-   -webkit-font-smoothing: antialiased;
-   /* background: #f0f0f0; */
-   }
-
-   #vision{
-     width: 500px;
-     height: 100%;
-     float: left;
-   }
-   
-   .vision-box {
-     background-color: #ddd;
-   }
-
-   div.align-right {
-    position: fixed;
-    right: 0;
-    top: 20px;
-    width: 500px;
-    height: 10%; 
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
   }
+<<<<<<< HEAD
+  #index-banner .section {
+    top: 10%;
+=======
 
   #username {
   width: 20%;
   margin: 8px 0;
   position: fixed;
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
   }
+}
 
+<<<<<<< HEAD
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+=======
   #password {
     width: 20%;
     margin: 8px 0;
@@ -97,24 +110,17 @@ h1 {
   .column3 {
     width:80%;
     margin: 50px 0;
+>>>>>>> 8e967f9496c695ed9757fd8214708cb0503d03ba
   }
-  
+}
 
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
 
-
-
-  
-
-
-
-
-
-  
-
-   /* 
-.align-right {/*
-  width: 180px;
-  height: 10px;
-  right: 30px;
-  float: right;
+footer.page-footer {
+  margin: 0;
 }
