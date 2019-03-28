@@ -2,22 +2,31 @@ body {
     background-color: powderblue;
   
 }
+.display-4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.images {
+  width: 400px;
+
+}
+.display-2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 h1 {
     color: black;
     font-family: verdana;
     font-size: 300%;
-
-  
   }
   h4  {
     color: black;
     font-family: courier;
     font-size: 160%;
+    text-align:center;
   }
 
   input[type=text] {
   width: 50%;
-  padding: 10px 10px;
   margin: 8px 0;
   box-sizing: border-box;
   }
@@ -57,12 +66,24 @@ h1 {
 
   #username {
   width: 20%;
-  padding: 10px 10px;
   margin: 8px 0;
-  box-sizing: border-box;
   position: fixed;
   }
 
+  #password {
+    width: 20%;
+    margin: 8px 0;
+    position: fixed;
+    }
+    
+    .jumbotron{
+      background-color: whitesmoke;
+      
+    }
+
+
+
+    /*
   .column1 {
     width:100%;
     margin: 30px 0;
