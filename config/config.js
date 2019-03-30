@@ -3,7 +3,7 @@ module.exports = {
   "development": {
     "username": "root",
     "password": process.env.db_key,
-    "database": "bars_db",
+    "database": "goalsDB",
     "host": "localhost",
     "dialect": "mysql"
   },
