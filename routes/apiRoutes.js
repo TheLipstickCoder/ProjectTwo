@@ -34,7 +34,7 @@ module.exports = function(app) {
       res.json(dbGoals);
     });
   });
-};
+
 
   // POST route for saving a new todo
   app.post("/api/userupdate", function(req, res) {
@@ -50,3 +50,4 @@ module.exports = function(app) {
       res.json(dbGoals);
     });
   });
+};
