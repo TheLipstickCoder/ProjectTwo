@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
 $(document).ready(function() {
     //   var $newItemInput = $("input.new-item");
@@ -44,3 +45,26 @@ $(document).ready(function() {
                         
                         // Capture user input from the second half of page (goal type and goal step).
 // Create on.click event listener updates the database and the table with their 
+=======
+$(document).ready(function() {
+    var $newItemInput = $("input.new-item");
+
+    var $goalContainer = $(".goal-container");
+
+    $(document).on("submit", "#goal-form", insertGoal);
+
+    var goals = [];
+
+    getGoals();
+
+
+})
+
+function updateGoal(goal) {
+    $.ajax({
+        method: "PUT",
+        url: "/public/registration",
+        data: goal
+    }).then(getGoals);
+}
+>>>>>>> 3acdc4d7f361947f11fb617e3e2047731bfde101
