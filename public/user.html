@@ -50,11 +50,12 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
     <div class="row center-align">
         <div class="center-align">
           <div class="icon-block">
-                <table class="highlight centered">
+              <div class="row center">
+                <p>What is your goal? Select from the following:</p>
+                <!-- <table class="highlight centered">
                     <thead>
                         <tr>
                             <th>Goal Type</th>
@@ -62,29 +63,42 @@
                         </tr>
                     </thead>
                 
-                    <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
+                    <tbody class="tableBody">
+                        <tr class="fullRow">
+                            <td class="tableDataType">Alvin</td>
+                            <td class="tableDataStep">Eclair</td>
                         </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
+                        <tr class="fullRow">
+                            <td class="tableDataType">Alan</td>
+                            <td class="tableDataStep">Jellybean</td>
                         </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
+                        <tr class="fullRow">
+                            <td class="tableDataType">Jonathan</td>
+                            <td class="tableDataStep">Lollipop</td>
                         </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
+                        <tr class="fullRow">
+                            <td class="tableDataType">Jonathan</td>
+                            <td class="tableDataStep">Lollipop</td>
                         </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
+                        <tr class="fullRow">
+                            <td class="tableDataType">Jonathan</td>
+                            <td class="tableDataStep">Lollipop</td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
+
+                  <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Goals</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Advance your Career</a></li>
+    <li><a href="#!">Improve your Health and Fitness</a></li>
+    <li><a href="#!">Write a Book</a></li>
+    <li><a href="#!">Start a Business</a></li>
+    <li><a href="#!">Pick up a new hobby</a></li>
+  </ul>
+        
           </div>
             </div>
         </div>
@@ -109,10 +123,13 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Add Your Own</h4>
           <div class="row center">
-              <div class="input-field col s12">
-                <input id="userInput" type="userInput">
-              </div>
+          </div>
+          <div class="row center">
+            <div class="input-field col s12">
+                <input id="newStep" type="text">
+                <label for="newStep">Add your new step here.</label>
             </div>
+        </div>
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
@@ -161,11 +178,13 @@
 
 
    <!--  Scripts-->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
-   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>
    <script src="js/materialize.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/user.js"></script>
    
   </body>
 </html>
