@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "root",
+    "password": "mack1908",
+    "database": "goalsDB",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "goalsDB",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

@@ -34,6 +34,22 @@ module.exports = function(app) {
       res.json(dbGoals);
     });
   });
+<<<<<<< HEAD
+    // POST route for saving a new todo
+    app.post("/api/userupdate", function(req, res) {
+      console.log(req.body);
+      // create takes an argument of an object describing the item we want to
+      // insert into our table. In this case we just we pass in an object with a text
+      // and complete property (req.body)
+      db.PresetGoals.create({
+        type: req.body.type,
+        steps: req.body.steps
+      }).then(function(dbGoals) {
+        // We have access to the new steps as an argument inside of the callback function
+        res.json(dbGoals);
+      });
+    });
+=======
 
 
   // POST route for saving a new todo
@@ -50,4 +66,5 @@ module.exports = function(app) {
       res.json(dbGoals);
     });
   });
+>>>>>>> 3acdc4d7f361947f11fb617e3e2047731bfde101
 };
