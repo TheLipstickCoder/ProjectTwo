@@ -56,72 +56,34 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <div class="row center">
-                <table class="highlight centered">
-                    <thead>
-                        <tr>
-                            <th>Goal Type</th>
-                            <th>Step</th>
-                        </tr>
-                    </thead>
-                    <tbody class="tableBody">
-                        <tr class="fullRow">
-                            <td class="tableDataType">Advance your Career</td>
-                            <td class="tableDataStep">Polish up your résumé/portfolio</td>
-                        </tr>
-                        <tr class="fullRow">
-                            <td class="tableDataType">Advance your Career</td>
-                            <td class="tableDataStep">Get a job</td>
-                        </tr>
-                        <tr class="fullRow">
-                            <td class="tableDataType">Advance your Career</td>
-                            <td class="tableDataStep">Gain experience at job</td>
-                        </tr>
-                        <tr class="fullRow">
-                            <td class="tableDataType">Advance your Career</td>
-                            <td class="tableDataStep">Advance at job</td>
-                        </tr>
-                        <tr class="fullRow">
-                            <td class="tableDataType">Advance your Career</td>
-                            <td class="tableDataStep">Reach the top through a promotion!</td>
-                        </tr>
-                    </tbody>
-                </div>
-          </div>
-        </div>
-      </div>
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Select Your Goal</h5>
 
-    </div>
-  </div>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Goals</a>
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="./images/career.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Add Your Own Step</h4>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="text">
-                </div>
-            </div>
-            <div class="row">
-                <a class="waves-effect waves-light btn-large" href="./userUpdate.html">Submit
+            <!-- Dropdown Structure -->
+  
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Advance your Career</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Improve your Health and Fitness</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Write a Book</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Start a Business</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Pick up a new hobby</a></li>
+            </ul>
+           
+            <a class="waves-effect waves-light btn-large" href="./index.html">Cancel
+                <i class="material-icons right">cancel</i>
+            </a>
+            <a class="waves-effect waves-light btn-large" href="./user.html">Submit
                 <i class="material-icons right">send</i>
-                </a>
-            </div>
+            </a>
+
+          </div>
         </div>
       </div>
 
@@ -173,6 +135,7 @@
   crossorigin="anonymous"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/dropdown.js"></script>
 
   </body>
 </html>
