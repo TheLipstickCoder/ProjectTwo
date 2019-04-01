@@ -7,8 +7,8 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/CSS/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/CSS/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -16,15 +16,14 @@
       <a id="logo-container" href="./index.html" class="brand-logo">Goal Tracker</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="./registration.html">Sign Up</a></li>
-        <li><a href="./login.html">Log In</a></li> 
-        <li><a href="./logoutConfirm.html">Log Out</a></li>           
+        <li><a href="./login.html">Log In</a></li>   
+        <li><a href="./logoutConfirm.html">Log Out</a></li>         
       </ul>
       <ul id="nav-mobile" class="sidenav">
           <li><a href="./index.html">Plan, Measure, and Meet Your Goals</a></li>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
           <li><a href="./registration.html">Sign Up</a></li>
-          <li><a href="./login.html">Log In</a></li>
-          <li><a href="./logoutConfirm.html">Log Out</a></li>       
+          <li><a href="./login.html">Log In</a></li> 
         </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -34,9 +33,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center white-text teal-lighten-2" id="title">Goal Tracker</h1>
+        <h1 class="header center white-text teal-lighten-2">Track Your Progress</h1>
         <div class="row center">
-          <h5 class="header col s12 light" id="description">Part organisation and part inspiration, this app will allow you to achieve your goals with the help of preset steps guaranteed to work.</h5>
+          <h5 class="header col s12 light">Part organisation and part inspiration, this app will allow you to achieve your goals with the help of preset steps guaranteed to work.</h5>
         </div>
         <div class="row center">
           <a href="./registration.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -53,10 +52,9 @@
     <div class="section">
 
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
+    <div class="row center-align">
+        <div class="center-align">
           <div class="icon-block">
-            <div class="row center">
                 <table class="highlight centered">
                     <thead>
                         <tr>
@@ -86,14 +84,12 @@
                             <td class="tableDataStep">Reach the top through a promotion!</td>
                         </tr>
                     </tbody>
-                </div>
+                </table>
           </div>
+            </div>
         </div>
-      </div>
-
     </div>
-  </div>
-
+    </div>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -107,23 +103,20 @@
 
   <div class="container">
     <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Add Your Own Step</h4>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="text">
-                </div>
-            </div>
-            <div class="row">
-                <a class="waves-effect waves-light btn-large" href="./userUpdate.html">Submit
-                <i class="material-icons right">send</i>
-                </a>
-            </div>
-        </div>
+      <div class="row center">
+        <h4>Add Your Own Step</h4>
+          <div class="input-field col s12">
+              <input id="password" type="text">
+          </div>
+          <a class="waves-effect waves-light btn" href="./index.html">Home
+            <i class="material-icons right">home</i>
+        </a>
+        <a class="waves-effect waves-light btn" href="./userUpdate.html">Submit
+            <i class="material-icons right">send</i>
+        </a>
       </div>
+    </div>
+    </div>
 
     </div>
   </div>
@@ -166,13 +159,13 @@
   </footer>
 
 
-  <!--  Scripts-->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+   crossorigin="anonymous"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/user.js"></script>
+   
   </body>
 </html>
