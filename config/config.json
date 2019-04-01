@@ -4,6 +4,7 @@
     "password": "mack1908",
     "database": "goalsDB",
     "host": "localhost",
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
@@ -11,6 +12,7 @@
     "password": null,
     "database": "goalsDB",
     "host": "localhost",
+    "port": 3306,
     "dialect": "mysql",
     "logging": false
   },
